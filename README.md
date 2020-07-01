@@ -1,7 +1,7 @@
 # market-store
 A market model store
 
-# Assignment
+## Assignment
 
 A market store offers to their clients three different types of discount cards: bronze, silver and gold. Each card stores information about its owner, the turnover for the previous month and the initial discount rate. With each card you can calculate the discount of the current purchase. In general this is done using the formula: valueOfPurchase * discountRate.
 
@@ -15,11 +15,11 @@ Your task is:
 <li>to create a class that contains method(s) that output the discount rate, the discount and the total purchase value;
 <li>in your application entry point:
 <ul>
-<li>create instances with sample data as shown in [Example outputs] (https://github.com/jelenam86/market-store/blob/master/README.md#example-output) section;
+<li>create instances with sample data as shown in <a href="https://github.com/jelenam86/market-store#example-output">Example outputs</a> section;
 <li>invoke method(s) to print the required information.
 </ul></ul>
 
-# Example output
+## Example output
 <b>Bronze:</b>
 <br>a. Mock data: turnover $0, purchase value $150;
 <br>b. Output:
