@@ -4,6 +4,7 @@ import main.java.card.Card;
 import main.java.card.DiscountCard;
 
 public class PaymentPult {
+
     public static double getDiscountRate(Card card) {
 	if (card instanceof DiscountCard && card != null)
 	    return ((DiscountCard) card).getDiscountRate();

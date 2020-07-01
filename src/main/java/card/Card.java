@@ -2,7 +2,7 @@ package main.java.card;
 
 import main.java.client.Client;
 
-public class Card {
+public abstract class Card {
 
     private Client owner;
 
