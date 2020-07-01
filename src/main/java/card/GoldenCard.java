@@ -16,9 +16,9 @@ public class GoldenCard extends DiscountCard {
 
     @Override
     public double calculateDiscountRate(double turnover) {
-	if ((int) Math.round(turnover / THRESHOLD) + INITIAL_DISCOUNT_RATE >= MAXIMUM_DISCOUNT_RATE)
+	if ((int) (turnover / THRESHOLD) + INITIAL_DISCOUNT_RATE >= MAXIMUM_DISCOUNT_RATE)
 	    return MAXIMUM_DISCOUNT_RATE;
-	return INITIAL_DISCOUNT_RATE + DISCOUNT_RATE_GROWTH * (int) Math.round(turnover / THRESHOLD);
+	return INITIAL_DISCOUNT_RATE + DISCOUNT_RATE_GROWTH * (int) (turnover / THRESHOLD);
     }
 
     public static double getThreshold() {

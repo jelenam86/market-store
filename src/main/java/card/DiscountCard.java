@@ -31,6 +31,8 @@ public abstract class DiscountCard extends Card implements DiscountPolicy {
 	return turnover;
     }
 
+    public abstract double calculateDiscountRate(double turnover);
+
     @Override
     public void setTurnover(double turnover) {
 	this.turnover = turnover > 0 ? turnover : 0;
