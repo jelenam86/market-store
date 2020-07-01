@@ -15,7 +15,7 @@ Your task is:
 <li>to create a class that contains method(s) that output the discount rate, the discount and the total purchase value;
 <li>in your application entry point:
 <ul>
-<li>create instances with sample data as shown in Example outputs section;
+<li>create instances with sample data as shown in [Example outputs](https://github.com/jelenam86/market-store/blob/master/README.md#example-output) section;
 <li>invoke method(s) to print the required information.
 </ul></ul>
 
