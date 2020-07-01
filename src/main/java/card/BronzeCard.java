@@ -1,6 +1,7 @@
 package main.java.card;
 
 import main.java.client.Client;
+import main.java.discount.DiscountCardType;
 
 public class BronzeCard extends DiscountCard {
 

@@ -1,8 +1,10 @@
 package main.java.card;
 
 import main.java.client.Client;
+import main.java.discount.DiscountCardType;
+import main.java.discount.DiscountPolicy;
 
-public abstract class DiscountCard extends Card {
+public abstract class DiscountCard extends Card implements DiscountPolicy {
 
     private DiscountCardType type;
     private double discountRate;
@@ -10,7 +12,7 @@ public abstract class DiscountCard extends Card {
 
     public DiscountCard(Client owner, DiscountCardType type) {
 	super(owner);
-	setType(type);
+	setDiscountType(type);
 	setTurnover(0);
     }
 
@@ -18,7 +20,8 @@ public abstract class DiscountCard extends Card {
 	return type;
     }
 
-    private void setType(DiscountCardType type) {
+    @Override
+    public void setDiscountType(DiscountCardType type) {
 	if (type == null)
 	    throw new NullPointerException("You must choose the type of card.");
 	this.type = type;
@@ -28,6 +31,7 @@ public abstract class DiscountCard extends Card {
 	return turnover;
     }
 
+    @Override
     public void setTurnover(double turnover) {
 	this.turnover = turnover > 0 ? turnover : 0;
 	this.discountRate = calculateDiscountRate(turnover);
@@ -36,6 +40,4 @@ public abstract class DiscountCard extends Card {
     public double getDiscountRate() {
 	return discountRate;
     }
-
-    public abstract double calculateDiscountRate(double turnover);
 }

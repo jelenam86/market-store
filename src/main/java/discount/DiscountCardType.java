@@ -1,4 +1,4 @@
-package main.java.card;
+package main.java.discount;
 
 public enum DiscountCardType {
 
